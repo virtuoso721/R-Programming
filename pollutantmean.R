@@ -1,7 +1,6 @@
 ## R Programming Assignment 1.1
-dir.create("./R Programming/specdata")
 
-pollutantmean <- function(directory, pollutant, id)
+pollutantmean <- function(directory, pollutant, id = 1:332)
    {
         setwd(paste("~/R Programming/", directory, sep = ""))
           if(pollutant == "sulfate"){
@@ -25,4 +24,4 @@ pollutantmean <- function(directory, pollutant, id)
   }
 pollutantmean("specdata", "sulfate", 1:10)
 pollutantmean("specdata", "nitrate", 70:72)
-pollutantmean("specdata", "nitrate", 23)
+pollutantmean("specdata", "nitrate")
