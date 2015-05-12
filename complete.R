@@ -1,6 +1,7 @@
 ## R Programming Assignment 1.2
 
-complete <- function(directory, id = 1:322){
+complete <- function(directory, id = 1:332){
+  library(data.table)
   setwd(paste("~/R Programming/", directory, sep = ""))
   idc <- c()
   nobs <- c()
