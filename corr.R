@@ -1,8 +1,7 @@
-## R Programming Assignment 1.3
 corr <- function(directory, threshold = 0){
   setwd(paste("~/R Programming/", directory, sep = ""))
-  dt <- complete(directory, 1:322)
-  idt <- c(dt$id[dt$nobs >= threshold])
+  dt <- complete(directory, 1:332)
+  idt <- c(dt$id[dt$nobs > threshold])
   
   correlation <- c()
   for (i in idt){
