@@ -37,7 +37,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
     path <- file.path(directory, sprintf("%03d.csv", as.numeric(i)))
     
     ## read data in each data file
-    file <- read.csv(path)[ , coln]
+    file <- read.csv(path)[, coln]
     
     ## store pollutant data in th vector initialized before
     data <- c(data, file)
