@@ -1,5 +1,5 @@
-## R Programming Assignment 1.1
-##R-Programming_Project-1: pollutantmean
+##R-Programming Project-1.1: pollutantmean
+##by Shu Wang
 
 pollutantmean <- function(directory, pollutant, id = 1:332){
   ## 'directory' is a character vector of length 1 indicating
@@ -46,6 +46,11 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
   ## calculte the mean of pollutant and remove the NAs
   mean(data, na.rm = TRUE)
 }
+
+##sample tests
 pollutantmean("specdata", "sulfate", 1:10)
+## 4.064128
 pollutantmean("specdata", "nitrate", 70:72)
+## 1.706047
 pollutantmean("specdata", "nitrate", 23)
+## 1.280833
